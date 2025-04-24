@@ -1,0 +1,33 @@
+RESUME MATCHING REPORT
+----------------------
+
+CANDIDATE DETAILS:
+------------------
+Name: Sohum Sharma        
+Email: sohumwork2001@gmail.com
+
+JOB DESCRIPTION:
+----------------
+Job Title: Full Stack Developer
+Company: TechFusion Inc      
+Location: Austin, TX          
+
+SKILLS ANALYSIS
+---------------
+
+REQUIRED SKILLS:
+----------------
+Match Percentage: 14.3% (1/7)
+Matched: JavaScript
+Missing: Node.js, React, MongoDB, Express, RESTful APIs, Git
+
+PREFERRED SKILLS:
+-------------------
+Match Percentage: 0.0% (0/5)
+Missing: TypeScript, AWS, Docker, GraphQL, CI/CD Pipelines
+
+WEIGHTED MATCH SCORE:10.7%
+
+FINAL RECOMMENDATION:
+---------------------
+LOW MATCH - NOT RECOMMENDED         

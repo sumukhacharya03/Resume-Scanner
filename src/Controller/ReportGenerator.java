@@ -12,18 +12,15 @@ public class ReportGenerator {
     public static Report generate(ResumeData data, int matchCount, int totalKeywords) {
         StringBuilder report = new StringBuilder();
         
-        // Header
         report.append("RESUME MATCHING REPORT\n");
         report.append("----------------------\n\n");
         
-        // Candidate Info
         report.append("CANDIDATE DETAILS:\n");
         report.append("------------------\n");
         report.append(String.format("Name: %-20s\n", data.name));
         report.append(String.format("Email: %-20s\n", data.email));
         report.append("\n");
         
-        // Job Info
         report.append("JOB DESCRIPTION:\n");
         report.append("----------------\n");
         report.append(String.format("Job Title: %-20s\n", data.jobTitle));
@@ -31,11 +28,9 @@ public class ReportGenerator {
         report.append(String.format("Location: %-20s\n", data.location));
         report.append("\n");
         
-        // Skill Matching
         report.append("SKILLS ANALYSIS\n");
         report.append("---------------\n\n");
         
-        // Required Skills
         report.append("REQUIRED SKILLS:\n");
         report.append("----------------\n");
         report.append(String.format("Match Percentage: %.1f%% (%d/%d)\n", 
@@ -50,7 +45,6 @@ public class ReportGenerator {
             report.append("Missing: " + String.join(", ", data.missingRequiredSkills) + "\n");
         }
         
-        // Preferred Skills
         report.append("\nPREFERRED SKILLS:\n");
         report.append("-------------------\n");
         report.append(String.format("Match Percentage: %.1f%% (%d/%d)\n", 
@@ -65,12 +59,10 @@ public class ReportGenerator {
             report.append("Missing: " + String.join(", ", data.missingPreferredSkills) + "\n");
         }
         
-        // Weighted Score
         report.append("\nWEIGHTED MATCH SCORE:");
         report.append(String.format("%.1f%%\n", data.weightedScore));
         report.append("\n");
         
-        // Recommendation
         String recommendation;
         if (data.weightedScore >= 80) {
             recommendation = "STRONG MATCH - RECOMMENDED";
@@ -101,4 +93,3 @@ public class ReportGenerator {
         return new Report(report.toString(), filename);
     }
 }
-
