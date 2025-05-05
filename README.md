@@ -58,6 +58,23 @@ The application generates a detailed report showing:
   - ≥40%: MODERATE MATCH - REVIEW FURTHER
   - <40%: LOW MATCH - NOT RECOMMENDED
 
+
+## 🛠️ How to Run the Project
+
+1. **Navigate to the project directory**:
+   ```bash
+   cd path/to/ResumeScanner
+   ```
+2. **Run the build script**:
+   ```bash
+   ./build.sh
+   ```
+   Make sure  build.sh has executable permissions. If not, run:
+   ```bash
+   chmod +x build.sh
+   ```
+
+
 ## Future Work
 
 -  **Improved name extraction**: Enhance the algorithm to better identify names in various resume formats
