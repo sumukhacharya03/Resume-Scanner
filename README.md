@@ -59,7 +59,7 @@ The application generates a detailed report showing:
   - <40%: LOW MATCH - NOT RECOMMENDED
 
 
-## 🛠️ How to Run the Project
+## How to Run the Project
 
 1. **Navigate to the project directory**:
    ```bash
